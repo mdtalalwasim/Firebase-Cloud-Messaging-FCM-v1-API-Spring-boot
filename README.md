@@ -39,7 +39,7 @@ This project demonstrates how to integrate Firebase Cloud Messaging (FCM) with a
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Firebase-Cloud-Messaging-(FCM)-v1-API-Spring-Boot.git
+   git clone https://github.com/mdtalalwasim/Firebase-Cloud-Messaging-FCM-v1-API-Spring-boot.git
 
 
 ## Keywords
