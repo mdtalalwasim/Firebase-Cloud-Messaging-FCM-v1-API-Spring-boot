@@ -15,6 +15,55 @@ This project demonstrates how to integrate Firebase Cloud Messaging (FCM) with a
 - **Firebase Admin SDK**: To send messages using Firebase Cloud Messaging.
 - **Maven**: For project management and dependency management.
 
+## For Testing Application
+## Step 01: Run the Application
+Run this Spring Boot application by executing the main class.
+## Step 02: Send a POST Request : Test With Topic
+Use Postman or cURL to send a request to the endpoint.
+
+- URL: POST http://localhost:8080/api/notification/topic
+- Content-Type: application/json
+```bash
+POST http://localhost:8080/api/notification/topic
+Content-Type: application/json
+
+```
+- Body:
+```bash
+{
+  "title": "Test Notification",
+  "message": "This is a test message",
+  "topic": "test-topic"
+}
+
+```
+## Before Request:
+![image](https://github.com/user-attachments/assets/30b13a65-983d-44d3-9d12-49c9192b1055)
+## After Request:
+![image](https://github.com/user-attachments/assets/8203b6c2-344e-4c53-a280-0f892bf018db)
+
+
+## Test Send Notification To Specific Device:
+Use Postman or cURL to send a request to the endpoint.
+
+- URL: POST http://localhost:8080/api/notification/device?deviceToken=YOUR_DEVICE_TOKEN
+- Content-Type: application/json
+```bash
+POST http://localhost:8080/api/notification/device?deviceToken=YOUR_DEVICE_TOKEN
+Content-Type: application/json
+
+```
+- Body:
+```bash
+{
+  "title": "Test Notification",
+  "message": "This is a test message",
+  "topic": "test-topic"
+}
+
+```
+![image](https://github.com/user-attachments/assets/024074c8-6434-47ba-99f9-8d320f587807)
+
 ## Getting Started
 
 ### Prerequisites
